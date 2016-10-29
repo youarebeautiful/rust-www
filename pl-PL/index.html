@@ -1,55 +1,54 @@
 ---
 layout: basic
-title: The Rust Programming Language
+title: Język programowania Rust
 ---
 
     <div class="row install-row">
       <div class="col-md-8">
         <p class="pitch">
-          <b>Rust</b> is a systems programming language
-          that runs blazingly fast,
-          prevents segfaults,
-          and guarantees thread safety.
+          <b>Rust</b> to niesamowicie szybki język programowania systemowego,
+          który zapobiega segfaultom
+          i gwarantuje bezpieczeństwo wątków.
           <br/>
-          <b><a href="friends.html">See who's using Rust.</a></b>
+          <b><a href="friends.html">Zobacz, kto jeszcze używa Rusta.</a></b>
         </p>
       </div>
       <div class="col-md-4 install-box">
         <span class="version-rec-box-inner">
-          Recommended Version:<br>
+          Rekomendowana wersja:<br>
           <span id="install-version"
-                data-type-linux="Linux binary"
-                data-type-windows="Windows Installer"
-                data-type-mac="Mac Installer"
+                data-type-linux="Plik binarny Linuxa"
+                data-type-windows="Instalator Windowsa"
+                data-type-mac="Instalator Mac"
                 data-type-source="source">
             {{ site.stable }}
             (<span>source</span>)
           </span>
         </span>
         <a class="btn btn-primary" id="inst-link"
-           href="https://static.rust-lang.org/dist/rustc-{{ site.stable }}-src.tar.gz">Install</a>
-        <a class="btn btn-default" href="install.html" role="button">Other Downloads</a>
+           href="https://static.rust-lang.org/dist/rustc-{{ site.stable }}-src.tar.gz">Zainstaluj</a>
+        <a class="btn btn-default" href="install.html" role="button">Inne wersje</a>
       </div>
     </div>
 
     <div class="row code-row">
       <div class="col-md-4">
-      <h2>Featuring</h2>
+      <h2>Cechy</h2>
       <ul class="laundry-list">
-        <li>zero-cost abstractions</li>
-        <li>move semantics</li>
-        <li>guaranteed memory safety</li>
-        <li>threads without data races</li>
-        <li>trait-based generics</li>
+        <li>abstrakcje o zerowym koszcie</li>
+        <li>semantyka move</li>
+        <li>gwarantowane bezpieczeństwo pamięci</li>
+        <li>brak ścigających się wątków</li>
+        <li>programowanie generyczne oparte na traitach</li>
         <li>pattern matching</li>
-        <li>type inference</li>
-        <li>minimal runtime</li>
-        <li>efficient C bindings</li>
+        <li>inferencja typów</li>
+        <li>minimalny runtime</li>
+        <li>wydajne bindingi do C</li>
       </ul>
       </div>
       <div class="col-md-8">
         <div id="active-code">
-          <button type="button" class="btn btn-primary btn-sm" id="run-code">Run</button>
+          <button type="button" class="btn btn-primary btn-sm" id="run-code">Uruchom</button>
           <div id="editor">{% include example.rs %}</div>
           <div id="result" data-msg-running="Running...">
             <a id="playlink"><i class="icon-link-ext"></i></a>
@@ -57,7 +56,7 @@ title: The Rust Programming Language
         </div>
         <div id="static-code">{% include example.rs.html %}</div>
         <div class="more-examples">
-          <a href="http://rustbyexample.com/">More examples</a>
+          <a href="http://rustbyexample.com/">Więcej przykładów</a>
         </div>
       </div>
     </div>
